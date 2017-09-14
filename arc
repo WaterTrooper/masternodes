@@ -7,9 +7,22 @@ Things you need:
 STEPS
 
 1. Login as root
+Using Putty, we will connect to your VPS as root.
 
+Now we will create a user to run the arctic daemon. Since running any program as root is a security issue.
 
+adduser <yourusername>
 
+Example: adduser puddi
+
+You will be asked to enter a password, after you enter it press enter. Then you will be asked to enter the password again, now press
+enter 6 times.
+
+Now we will give this new user sudo privileges.
+
+usermod -a -G sudo <yourusername>
+
+Example: usermod -a -G sudo puddi
 
 
 Arctic Goldminenode instructions (Cold wallet VPS with Windows wallet)
